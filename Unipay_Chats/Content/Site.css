@@ -1,0 +1,129 @@
+﻿body {
+    padding: 0;
+    padding: 0;
+    background-image: url("/img/2.png");
+    font-family: sans-serif;
+    background-size: cover;
+}
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.loginbox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    height: 400px;
+    border-radius: 30px;
+    padding: 80px 40px;
+    box-sizing: border-box;
+    background: rgba(0,0,0,0.76);
+}
+
+.logo_user {
+    width: 180px;
+    height: 150px;
+    overflow: hidden;
+    top: calc(-70px/2);
+    left: calc(45% - 50px);
+    position: absolute;
+}
+
+.title_login {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    color: rgb(255,217,9);
+}
+
+.lblemail {
+    color: yellow;
+}
+
+.lblemail, .lblpass {
+    font-weight: bold;
+    color: #fff;
+    display: none;
+}
+
+.txtemail, .txtpass, .btnubmit {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.btnubmit {
+    width: 280px;
+    margin-top: 40px;
+}
+
+label i {
+    font-size: 1.1em;
+    margin-right: 3px;
+    color: #fd5c63;
+}
+
+.txtemail, .txtpass {
+    width: 100%;
+    color: #fff;
+    outline: none;
+    font-size: 15px;
+    letter-spacing: 2px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border: none;
+    border: 1px solid #eee;
+    border-radius: 30px;
+    -webkit-appearance: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    background: transparent;
+}
+
+::placeholder {
+    color: rgba(255,255,255,.5);
+}
+
+.btnubmit {
+    border: none;
+    outline: none;
+    height: 40px;
+    font-size: 16px;
+    color: #fff;
+    background-color: rgb(255,9,9);
+    cursor: pointer;
+    border-radius: 20px;
+    transition: .3s ease-in-out;
+}
+
+    .btnubmit:hover {
+        background-color: rgba(255,217,9);
+    }
+
+.btnforget {
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #fff;
+}
+
+    .btnforget:hover {
+        text-decoration: underline;
+        color: #fff;
+    }

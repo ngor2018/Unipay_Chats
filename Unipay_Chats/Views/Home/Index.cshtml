@@ -1,0 +1,21 @@
+﻿@model Unipay_Chats.Models.unipay_chat_db
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="loginbox">
+    <img src="~/img/4.png" alt="Alternate Text" class="logo_user" />
+    <form action="Verifier" method="post">
+        @Html.LabelFor(model => model.unipay_user, htmlAttributes: new { @class = "lblemail" })<br />
+        @Html.EditorFor(model => model.unipay_user, new { htmlAttributes = new { @class = "txtemail", placeholder = "Entrer login" } })<br />
+        @Html.ValidationMessageFor(model => model.unipay_user, "", new { @class = "text-danger" })<br />
+        @Html.LabelFor(model => model.password, htmlAttributes: new { @class = "lblpass" })
+        @Html.EditorFor(model => model.password, new { htmlAttributes = new { @class = "txtpass", placeholder = "Entrer mot de passe" } })<br />
+        @Html.ValidationMessageFor(model => model.password, "", new { @class = "text-danger" })
+        <div style="color:red;">@Html.DisplayFor(model => model.LoginErrorMessage, "", new { @class = "text-danger" })</div>
+        <button type="submit" class="btnubmit">Se connecter</button><br />
+    </form>
+</div>
+<script src="~/Scripts/jquery-3.4.1.min.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>

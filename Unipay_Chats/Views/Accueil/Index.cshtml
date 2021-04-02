@@ -1,0 +1,11 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    if (Session["unipay_id"] == null)
+    {
+        Response.Redirect("~/Home/Index");
+    }
+}
+
+<h2>Bienvenue @Session["nom_complet"].ToString()</h2>
+<a href="@Url.Action("Deconnexion","Home")">Deconnexion</a>
